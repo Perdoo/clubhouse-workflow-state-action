@@ -1,0 +1,18 @@
+name: Clubhouse Workflow State
+description: Move stories between workflow states
+branding:
+  icon: arrow-right-circle
+  color: blue
+inputs:
+  token:
+    description: Auth token for Clubhouse's API
+    required: true
+  fromStateId:
+    description: Move from state id
+    required: true
+  toStateId:
+    description: Move to state id
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
