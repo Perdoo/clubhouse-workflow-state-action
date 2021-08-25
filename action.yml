@@ -4,8 +4,8 @@ branding:
   icon: arrow-right-circle
   color: blue
 inputs:
-  token:
-    description: Auth token for Clubhouse's API
+  chToken:
+    description: Clubhouse API auth token
     required: true
   fromStateId:
     description: Move from state id

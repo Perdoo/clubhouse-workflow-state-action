@@ -3,8 +3,8 @@ const Clubhouse = require('clubhouse-lib');
 
 async function run() {
     try {
-        const token = core.getInput('token');
-        const client = Clubhouse.create(token);
+        const chToken = core.getInput('chToken');
+        const client = Clubhouse.create(chToken);
         const fromStateId = core.getInput('fromStateId');
         const toStateId = core.getInput('toStateId');
 
