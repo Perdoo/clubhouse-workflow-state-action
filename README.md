@@ -21,12 +21,12 @@ _Required._ Move to state id.
 ```yaml
 uses: Perdoo/clubhouse-workflow-state-action@v1
 with:
-  token: ${{ secrets.CLUBHOUSE_TOKEN }}
+  chToken: ${{ secrets.CLUBHOUSE_TOKEN }}
   fromStateId: 12345 
   toStateId: 67890
 ```
 
-To get the workflow state IDs, use:
+To get your workflow state ids, use:
 
 ```shell
 curl -X GET \
