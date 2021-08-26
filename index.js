@@ -8,6 +8,8 @@ async function run() {
         const fromStateId = core.getInput('fromStateId');
         const toStateId = core.getInput('toStateId');
 
+        core.setSecret('chToken');
+
         const processResult = result => {
             if (!result.total) {
                 core.info('No stories found in the given workflow state.');
