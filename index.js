@@ -3,12 +3,12 @@ const Clubhouse = require('clubhouse-lib');
 
 async function run() {
     try {
-        const chToken = core.getInput('chToken');
-        const client = Clubhouse.create(chToken);
+        const shortcutToken = core.getInput('shortcutToken');
+        const client = Clubhouse.create(shortcutToken);
         const fromStateId = core.getInput('fromStateId');
         const toStateId = core.getInput('toStateId');
 
-        core.setSecret('chToken');
+        core.setSecret('shortcutToken');
 
         const processResult = result => {
             if (!result.total) {

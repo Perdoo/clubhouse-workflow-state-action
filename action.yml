@@ -1,11 +1,11 @@
-name: Clubhouse Workflow State
+name: Shortcut Workflow State
 description: Move stories between workflow states
 branding:
   icon: arrow-right-circle
   color: blue
 inputs:
-  chToken:
-    description: Clubhouse API auth token
+  shortcutToken:
+    description: Shortcut API auth token
     required: true
   fromStateId:
     description: Move from state id
