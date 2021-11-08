@@ -19,7 +19,7 @@ _Required._ Move to state id.
 ## Example usage
 
 ```yaml
-uses: perdoo/shortcut-workflow-state-action@v1.0.0
+uses: perdoo/shortcut-workflow-state-action@v2.0.0
 with:
   shortcutToken: ${{ secrets.SHORTCUT_TOKEN }}
   fromStateId: 12345
@@ -32,5 +32,5 @@ To get your workflow state ids, use:
 curl -X GET \
   -H "Content-Type: application/json" \
   -H "Shortcut-Token: $SHORTCUT_TOKEN" \
-  -L "https://api.clubhouse.io/api/v3/workflows"
+  -L "https://api.app.shortcut.com/api/v3/workflows"
 ```
