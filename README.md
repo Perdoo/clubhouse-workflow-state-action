@@ -19,7 +19,7 @@ _Required._ Move to state id.
 ## Example usage
 
 ```yaml
-uses: perdoo/shortcut-workflow-state-action@v2.0.1
+uses: perdoo/shortcut-workflow-state-action@v2.1.0
 with:
   shortcutToken: ${{ secrets.SHORTCUT_TOKEN }}
   fromStateId: 12345
